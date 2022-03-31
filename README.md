@@ -1,6 +1,4 @@
-# ACe Fitness App
-
-__A Basic Demo App built with Flutter v2__
+# Muscle_Wiki
 
 <u>App Features:</u>
 

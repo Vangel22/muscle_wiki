@@ -58,7 +58,7 @@ class _SessionsScreenState extends State<SessionsScreen> {
                   ),
                   TextField(
                     controller: txtDuration,
-                    decoration: InputDecoration(hintText: 'Duration'),
+                    decoration: InputDecoration(hintText: 'Duration in minutes'),
                   ),
                 ],
               ),
@@ -111,8 +111,8 @@ class _SessionsScreenState extends State<SessionsScreen> {
         ),
       ));
     });
-
-      return tiles;
+    
+    return tiles;
   }
 
   void updateScreen() {

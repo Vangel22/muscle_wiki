@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:globo_fitness/screens/login_screen.dart';
 import '../screens/bmi_screen.dart';
 import '../screens/intro_screen.dart';
 import 'brandColor.dart';
+//import 'package:firebase_auth/firebase_auth.dart';
+
 
 void main() {
-  runApp(GlobeApp());
+  runApp(MuscleWiki());
 }
 
-class GlobeApp extends StatelessWidget {
-  const GlobeApp({Key? key}) : super(key: key);
+class MuscleWiki extends StatelessWidget {
+  const MuscleWiki({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,9 +21,10 @@ class GlobeApp extends StatelessWidget {
       ),
       routes: {
         '/': (context) => IntroScreen(),
+        '/login': (context) => LoginScreen(),
         '/bmi': (context) => BmiScreen(),
       },
-      initialRoute: '/',
+      initialRoute: '/login',
     );
   }
 }

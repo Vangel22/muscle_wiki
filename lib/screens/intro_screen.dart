@@ -4,8 +4,14 @@ import 'package:url_launcher/url_launcher.dart';
 import '../shared/menu_drawer.dart';
 import '../shared/menu_bottom.dart';
 
-class IntroScreen extends StatelessWidget {
+class IntroScreen extends StatefulWidget {
   IntroScreen({Key? key}) : super(key: key);
+
+  @override
+  State<IntroScreen> createState() => _IntroScreenState();
+}
+
+class _IntroScreenState extends State<IntroScreen> {
   Logger logger = Logger();
 
   @override

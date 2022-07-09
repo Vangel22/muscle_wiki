@@ -72,7 +72,10 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                   height: 50,
                   padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: ElevatedButton(
-                    child: const Text('Send request'),
+                    child: const Text(
+                      'Send request',
+                      style: TextStyle(fontSize: 20),
+                    ),
                     onPressed: () {
                       Navigator.of(context).pop(true);
                     },

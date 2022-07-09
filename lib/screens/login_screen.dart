@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:globo_fitness/screens/register_screen.dart';
 import 'package:logger/logger.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
 
+
+import 'package:globo_fitness/screens/register_screen.dart';
 import 'forgot_password.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -70,28 +72,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  IconButton(
-                    iconSize: 40,
-                    onPressed: () {},
-                    icon: Icon(Icons),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.email),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.email),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.email),
-                  ),
-                ],
-              ),
               TextButton(
                 onPressed: () {
                   Navigator.push(
@@ -106,7 +86,11 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 50,
                   padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: ElevatedButton(
-                    child: const Text('Login'),
+                    
+                    child: const Text(
+                      'Login',
+                      style: TextStyle(fontSize: 20),
+                    ),
                     onPressed: () {
                     },
                   )
@@ -116,7 +100,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   const Text('Does not have account?'),
                   TextButton(
                     child: const Text(
-                      'Sign in',
+                      'Register',
                       style: TextStyle(fontSize: 20),
                     ),
                     onPressed: () {
@@ -129,6 +113,34 @@ class _LoginScreenState extends State<LoginScreen> {
                   )
                 ],
                 mainAxisAlignment: MainAxisAlignment.center,
+              ),
+              Container(
+                  padding: EdgeInsets.all(10),
+                  child: Row(children: <Widget>[
+                    Expanded(child: Divider()),
+                    Text(
+                      "OR",
+                      style: TextStyle(color: Color(LoginScreen.brandBlue)),
+                    ),
+                    Expanded(child: Divider()),
+                  ])),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SignInButton(
+                    Buttons.Google,
+                    onPressed: () {
+                      //auth call
+                    },
+                  ),
+                  SignInButton(
+                    Buttons.Facebook,
+                    text: "Sign up with Facebook",
+                    onPressed: () {
+                      //auth call
+                    },
+                  ),
+                ],
               ),
             ],
           )),

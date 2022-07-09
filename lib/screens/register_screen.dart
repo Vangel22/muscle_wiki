@@ -6,7 +6,7 @@ class RegisterUserScreen extends StatefulWidget {
 
   static const brandBlue = 0XFF20409a;
   static const descriptionText =
-      "* Send your email to recieve a token for reseting your password";
+      "* Write down credentials to register to MuscleWiki";
 
   @override
   State<RegisterUserScreen> createState() => _RegisterUserScreenState();
@@ -59,7 +59,16 @@ class _RegisterUserScreenState extends State<RegisterUserScreen> {
                 ),
               ),
               Container(
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                child: TextField(
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Username',
+                  ),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
                 child: TextField(
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
@@ -68,10 +77,33 @@ class _RegisterUserScreenState extends State<RegisterUserScreen> {
                 ),
               ),
               Container(
-                  height: 50,
-                  padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                child: TextField(
+                  obscureText: true,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Password',
+                  ),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                child: TextField(
+                  obscureText: true,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Confirm Password',
+                  ),
+                ),
+              ),
+              Container(
+                  height: 60,
+                  padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
                   child: ElevatedButton(
-                    child: const Text('Send request'),
+                    child: const Text(
+                      'Register',
+                      style: TextStyle(fontSize: 20),
+                    ),
                     onPressed: () {},
                   )),
             ],

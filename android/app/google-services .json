@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "12463221919",
+    "project_id": "musclewiki-fe573",
+    "storage_bucket": "musclewiki-fe573.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12463221919:android:33b4636d93baf5f04446aa",
+        "android_client_info": {
+          "package_name": "com.anirban.muscle_wiki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12463221919-c8343c6i6rgaqd68s6va4bkc384m5gvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_NFnqKwjFe6KrYeAsY_SNTfaDbVuZUGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12463221919-c8343c6i6rgaqd68s6va4bkc384m5gvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12463221919:android:b12b0f241238eef44446aa",
+        "android_client_info": {
+          "package_name": "muslce.wiki22"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12463221919-c8343c6i6rgaqd68s6va4bkc384m5gvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_NFnqKwjFe6KrYeAsY_SNTfaDbVuZUGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12463221919-c8343c6i6rgaqd68s6va4bkc384m5gvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

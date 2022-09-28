@@ -1,6 +1,6 @@
 # Muscle_Wiki
 
-<p>Clone of the web application <a href="https://musclewiki.com" /></p>
+<p>Clone of the web application https://musclewiki.com</p>
 
 <u>App Features:</u>
 
